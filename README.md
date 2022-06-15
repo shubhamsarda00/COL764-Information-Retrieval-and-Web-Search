@@ -1,1 +1,1 @@
-# COL764-Information-Retrieval-and-Web-Search
+# COL764 Information Retrieval and Web Search
