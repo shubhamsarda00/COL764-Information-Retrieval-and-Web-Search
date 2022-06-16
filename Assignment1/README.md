@@ -1,12 +1,25 @@
-VERY IMPORTANT ***********
-I've used stanford ner tagger and assumed it to be in the root directory i.e. in the folder 2018TT10958
+# Assignment 1
+
+In this assignment, we implement a **Vector Space Retrieval** model to create an efficient retrieval system that can different type queries such as prefix search queries, name entity tagged queries etc. More detailed problem statement can be found in **assignment1.pdf**. More details on the model implemented and query handling can be found in **Algorithmic Details of the Vector Space Retrieval Model.pdf**. 
+
+## Details for Running the Code
+
+**Libraries Required:**
+1. numpy
+2. nltk
+3. pickle
+4. bzip
+5. os
+6. sys
+7. random
+
+Python version >= 3.7.4
+Stanford ner tagger has been used for tagging. It must be present in the src folder for running the code.
 
 It can be downloaded from--
 https://nlp.stanford.edu/software/stanford-ner-4.0.0.zip
 
-The tagger also requires the java path. If its not already added to PATH, 
-you can either give it as the last cmd line argument to vecsearch.py, 
-I'll extract it using sys.argv[12]
+The tagger also requires the java path. If its not already added to PATH, you can either give it as the last cmd line argument to vecsearch.py, It'll be extracted using sys.argv[12]
 command-line arguments:
 --query queryfile: a file containing keyword queries, with each line corresponding
 to a query
@@ -39,17 +52,7 @@ os.environ['JAVAHOME'] = java_path
 
 ****************
 
-I've used the following libraries-
 
-1. numpy
-2. nltk
-3. pickle
-4. bzip
-5. os
-6. sys
-7. random
-
-My python version is 3.7.4
 
 My highest ndcg was 0.2467 and highest F1@100 was .158
 
