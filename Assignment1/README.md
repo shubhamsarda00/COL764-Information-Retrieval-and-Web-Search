@@ -1,6 +1,6 @@
 # Assignment 1
 
-In this assignment, we implement a **Vector Space Retrieval** model to create an efficient retrieval system that can different type queries such as prefix search queries, name entity tagged queries etc. More detailed problem statement can be found in **assignment1.pdf**. More details on the model implemented and query handling can be found in **Algorithmic Details of the Vector Space Retrieval Model.pdf**. 
+In this assignment, we implement a **Vector Space Retrieval** model to create an efficient retrieval system that can different type queries such as prefix search queries, name entity tagged queries etc. More detailed problem statement can be found in **assignment1.pdf**. More details on the model implementation and query handling can be found in **Algorithmic Details of the Vector Space Retrieval Model.pdf**. 
 
 ### Requirements for Running the Code
 
