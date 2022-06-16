@@ -45,7 +45,9 @@ javapath: path to java.exe in the bin folder inside jdk folder
 Note: The tagger also requires the java path. If its not already added to PATH variable, you can either give it as the last cmd line argument or the following path will be considered as default: "C:/Program Files/Java/jdk-11.0.3/bin/java.exe"
 This default path can also be changed manually from 14th line of vecsearch.py
 
-### Results
-
+### Evaluation
+The trec eval tool (https://github.com/usnistgov/trec_eval) can be used to evaluate the model based on NDCG or F1 score.
+Correct judgement of these sample queries can be found in **results.51-100**.
+ 
 NDCG: 0.2467, F1@100: 0.158
 Compressed size of index files was 64.47 mb
