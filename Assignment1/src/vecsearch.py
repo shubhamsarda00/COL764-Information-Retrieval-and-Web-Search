@@ -68,7 +68,7 @@ a = bz2.BZ2File(sys.argv[8], 'rb')
 inverted=pickle.load(a)
 #inv_doc_freqs=pickle.load(a)
 norms=pickle.load(a)
-print(d[79][0])
+#print(d[79][0])
 
 a.close()
 
