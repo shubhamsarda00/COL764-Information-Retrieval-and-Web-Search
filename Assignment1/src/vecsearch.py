@@ -9,7 +9,7 @@ Created on Thu Oct 22 01:04:57 2020
 import os,sys
 java_path=""
 try:
-    java_path = sys.argv[12]
+    java_path = sys.argv[6]
 except:
     java_path = "C:/Program Files/Java/jdk-11.0.3/bin/java.exe"
         
