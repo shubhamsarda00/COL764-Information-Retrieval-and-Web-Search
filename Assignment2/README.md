@@ -20,10 +20,9 @@ Total m files are stored where m is the expansion limit. Files are named as resu
 
 **2. python3 lm_rerank.py (query-file) (top-100-file) (collection-file) (model=uni|bi)**
 
-On running the lm_rerank.py script: 
+On running the lm_rerank.py script:
 
-For the unigram model, result file in the trec_eval format is stored as result_uni.txt
-For the bigram model, result file in the trec_eval format is stored as result_bi.txt
+For the unigram model, result file in the trec_eval format is stored as result_uni.txt. For the bigram model, result file in the trec_eval format is stored as result_bi.txt
 
 **query-file**: file containing the queries in the same tsv format as given in the ms marco dataset
 
