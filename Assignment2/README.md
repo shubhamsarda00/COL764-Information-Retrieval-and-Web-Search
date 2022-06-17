@@ -26,8 +26,12 @@ For the unigram model, result file in the trec_eval format is stored as result_u
 For the bigram model, result file in the trec_eval format is stored as result_bi.txt
 
 **query-file**: file containing the queries in the same tsv format as given in the ms marco dataset
+
 **top-100-file**: a file containing the top100 documents in the same format as train and dev top100 files given in the msmarco dataset, which need to be reranked
+
 **collection-file**: file containing the full document collection (in the same format as msmarco docs file given)
+
 **expansion-limit**: is a number ranging from 1—15 that specifies the limit on the number of additional terms in the expanded query
+
 **model=uni|bi**: it specifies the unigram or the bigram language model that should be used for relevance language model.
 
