@@ -12,7 +12,6 @@ Following libraries are required:
 
 ### Commands to Run the Code
 
-
 **1. python3 prob_rerank.py (query-file) (top-100-file) (collection-file) (expansion-limit)**  
 
 On running the prob_rerank.py script, results for each term expansion will be stored in separate files in the trec_eval format.
@@ -20,6 +19,7 @@ Total m files are stored where m is the expansion limit. Files are named as resu
 
 
 **2. python3 lm_rerank.py (query-file) (top-100-file) (collection-file) (model=uni|bi)**
+
 On running the lm_rerank.py script: 
 
 For the unigram model, result file in the trec_eval format is stored as result_uni.txt
