@@ -136,6 +136,7 @@ if model=='uni':
         
         mu=dlavg*3
         c=len(index)
+        # or c=sum([sum(posting.values()) for posting in index])
         for word in tokens:
             if(len(word)==1):
                 continue
