@@ -1,6 +1,6 @@
 # Movie Recommender: Course Project
 
-This project implements a movie recommendation system for users in the **MovieLens 1M database** (https://grouplens.org/datasets/movielens/1m/). 
+This project implements a **Movie Recommendation System** for users in the **MovieLens 1M database** (https://grouplens.org/datasets/movielens/1m/). 
 
 ### Dataset
 
