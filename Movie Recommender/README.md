@@ -4,7 +4,7 @@ This project implements a movie recommendation system for users in the **MovieLe
 
 ### Dataset
 
-The dataset contains 1,000,000 ratings given by different users along with the timestamp of viewing, as well as basic details about the movie (title, genres). In order to make our dataset more comprehensive, we have performed **web scraping** from **IMDb** over all the movies of the MovieLens 1M dataset, and augmented the MovieLens dataset with the movie descriptions obtained from there. We have extracted the movie description from the first result displayed in IMDb search for each movie in the MovieLens dataset. We have not used additional search results since IMDb only contains one unique correct result corresponding to a movie title, and using lower ranked search results had a higher chance of appending incorrect movie descriptions to our dataset.
+The dataset contains 1,000,000 ratings given by different users along with the timestamp of viewing, as well as basic details about the movie (title, genres). We further process the **.dat** files from the original dataset to create **.csv** files for ease of use. In order to make our dataset more comprehensive, we have performed **web scraping** from **IMDb** over all the movies of the MovieLens 1M dataset, and augmented the MovieLens dataset with the movie descriptions obtained from there. We have extracted the movie description from the first result displayed in IMDb search for each movie in the MovieLens dataset. We have not used additional search results since IMDb only contains one unique correct result corresponding to a movie title, and using lower ranked search results had a higher chance of appending incorrect movie descriptions to our dataset.
 
 Movies dataframe before webscraping:
 
@@ -13,8 +13,6 @@ Movies dataframe before webscraping:
 Movies dataframe after webscraping:
 
 ![image](https://user-images.githubusercontent.com/45795080/177042953-162b7276-04bc-4e53-b3d2-ca57961e735f.png)
-
-
 
 
 ### Our Recommendation System
