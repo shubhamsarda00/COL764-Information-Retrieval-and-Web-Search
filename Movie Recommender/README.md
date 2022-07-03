@@ -17,6 +17,14 @@ Movies dataframe after webscraping:
 
 ### Our Recommendation System
 
+We have implemented multiple (9) models to perform a “Recommended for You” functionality for a user.
+We have implemented 1 model for “Because you watched [Movie X recently, you may also like]” option based on the last watched movie by a user (inspired by  the similar option provided by Netflix).
+We have implemented 3 models for a new user (cold start case), whose previous data is not available to us:
+Recommending the most recent top-rated movies
+Recommending movies similar to their favourite movie
+Recommending top-rated movies of a genre of their choice
+
+
 We provide recommendations based on the user’s overall past
 preferences, based on their most recently watched films, as
 well as some basic recommendations in case of a new user
@@ -26,3 +34,27 @@ filtering, and multiple separate neural architectures that
 implement neural collaborative filtering. Further, we
 have performed 10-fold cross-validation on each of our
 architectures in order to evaluate their performance
+
+More details in **Movie_Recommender_Report.pdf** and **Movie Recommender System - Team Algo Busters.pptx**.
+
+### Running the Code
+
+### Libraries Required
+
+1)NLTK - https://www.nltk.org/ 
+
+2)spaCy - https://spacy.io/ 
+
+3)NumPy - https://numpy.org/ 
+
+4)Pandas - https://pandas.pydata.org/ 
+
+5)sentence-transformers - https://github.com/UKPLab/sentence-transformers
+
+6)Keras - https://keras.io/ 
+
+7)Keras Self Attention - https://github.com/CyberZHG/keras-self-attention
+
+8)TensorFlow - https://www.tensorflow.org/ 
+
+9)scikit-learn - https://scikit-learn.org/stable/ 
