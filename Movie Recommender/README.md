@@ -20,8 +20,6 @@ Movies dataframe after webscraping:
 ![image](https://user-images.githubusercontent.com/45795080/177255843-fb726b97-6b64-4b02-bb3e-e6a79ae20e5f.png)
 
 
-<br/>
-
 1. We have implemented multiple (9) models to perform a **“Recommended for You”** functionality for a user based on their previous ratings.
 
 a) **User-User Collaborative Filtering**: 
