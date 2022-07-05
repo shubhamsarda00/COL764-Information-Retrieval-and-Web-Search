@@ -41,6 +41,23 @@ c) Recommending top-rated movies of a genre of their choice <br/><br/>
 
 ### Evaluation and Results
 
+We have run 10-fold cross validation on each of our models, wherein we evaluated the models 10 times by dividing the dataset into train and test sets in a 90:10 ratio each time. For item-item collaborative filtering and our models for neural collaborative filtering, we have used the entire 1M dataset for our 10-fold cross-validation. For user-user collaborative filtering, due to the higher time complexity with respect to unwatched movies, we have run the cross-validation on a test set of 1/10th size.
+
+We have primarily used the following metrics in our evaluation:
+1) RMSE (Root Mean Squared Error)
+2) NDCG, NDCG@10
+3) Recall@10, Recall@100
+4) Precision@10, Precision@100
+5) MRR (Mean Reciprocal Rank)
+6) MAP (Mean Average Precision)
+7) Statistical Significance Tests: Paired Student’s t-test and Wilcoxon Signed Rank Test
+
+We've used **Text REtrieval Conference (TREC)** evaluation software (https://github.com/usnistgov/trec_eval) to calculate the said metrics.
+We’ve created Qrel files by sorting the test set using ground truth ratings. We’ve experimented with three threshold (user) ratings- 3, 4 and 5 to consider a movie relevant. For creating the results file, we sorted the test set on the basis of predicted ratings. Hence, for each fold of cross-validation, we have generated 3 corresponding qrels files as well as 3 possible results files in order to run these files on trec_eval and calculate the relevant metrics. Complete results can be found in:<br/> https://docs.google.com/spreadsheets/d/1KVXD6MGQhXYBByOostWGwVohUvSFoYZ9a-9GHZVUo3o/edit#gid=0
+ 
+We find that on almost all metrics, our best results are obtained on our 6th and 7th Neural Collaborative Filtering architectures. We have not included user-user collaborative filtering results in our comparison since that was performed on a smaller dataset. In terms of RMSE, current state-of-the-art model for this dataset obtains a rmse score of **0.822** compared to **0.866** achieved by our best model of Neural Collaborative Filtering. On comparing, our rmse results for several neural architecture are very close to the latest sota results, For NDCG, although they haven't specified the relevance threshold used for NDCG calculation, our neural collaborative filtering models are in line with the current sota results (https://paperswithcode.com/sota/collaborative-filtering-on-movielens-1m). 
+
+
 
 ### Running the Code
 
