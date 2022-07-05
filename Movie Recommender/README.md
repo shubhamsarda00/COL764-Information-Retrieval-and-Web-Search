@@ -17,27 +17,43 @@ Movies dataframe after webscraping:
 
 ### Our Recommendation System
 
-We have implemented multiple (9) models to perform a “Recommended for You” functionality for a user.
-We have implemented 1 model for “Because you watched [Movie X recently, you may also like]” option based on the last watched movie by a user (inspired by  the similar option provided by Netflix).
-We have implemented 3 models for a new user (cold start case), whose previous data is not available to us:
-Recommending the most recent top-rated movies
-Recommending movies similar to their favourite movie
-Recommending top-rated movies of a genre of their choice
 
 
-We provide recommendations based on the user’s overall past
-preferences, based on their most recently watched films, as
-well as some basic recommendations in case of a new user
-who hasn’t previously used Movie Lens. We have employed
-item-item collaborative filtering, user-user collaborative
-filtering, and multiple separate neural architectures that
-implement neural collaborative filtering. Further, we
-have performed 10-fold cross-validation on each of our
-architectures in order to evaluate their performance
+![image](https://user-images.githubusercontent.com/45795080/177251927-8cc0fbea-842d-4aa4-9aa5-3f7f587479b1.png)
 
-More details in **Movie_Recommender_Report.pdf** and **Movie Recommender System - Team Algo Busters.pptx**.
+1. We have implemented multiple (9) models to perform a **“Recommended for You”** functionality for a user based on their previous ratings.
+
+a) **User-User Collaborative Filtering**: 
+<br/>
+b) **Item-Item Collaborative Filtering**: 
+<br/>
+c) **Neural Collaborative Filtering**:
+<br/>
+
+2. We have implemented 1 model for **“Because you watched [Movie X recently, you may also like]”** option based on the last watched movie by a user (inspired by the similar option provided by **Netflix**).
+
+3. We have implemented 3 models for a new user (**cold start case**), whose previous data is not available to us:
+ 
+a) Recommending the most recent top-rated movies <br/>
+b) Recommending movies similar to their favourite movie <br/>
+c) Recommending top-rated movies of a genre of their choice <br/><br/>
+
+**More details in "Movie_Recommender_Report.pdf" and "Movie Recommender System - Team Algo Busters.pptx".**
+
+### Evaluation and Results
+
 
 ### Running the Code
+
+1. **Movie_Recommender.ipynb**:<br/>
+
+2. **preprocessing.py**:<br/>
+
+3. **user_user_cf.py**:<br/>
+
+4. **item_item_cf.py**:<br/>
+
+5. **neural_cf.py**:<br/>
 
 ### Libraries Required
 
