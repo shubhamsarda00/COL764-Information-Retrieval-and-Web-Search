@@ -23,14 +23,16 @@ Movies dataframe after webscraping:
 1. We have implemented multiple (9) models to perform a **“Recommended for You”** functionality for a user based on their previous ratings.
 
 a) **User-User Collaborative Filtering**: Rating that a user would give to a paticular movie is predicted by looking at the ratings given by some similar users to the same movie. 
-<br/>
+
 ![image](https://user-images.githubusercontent.com/45795080/177635558-413113b4-f3d4-4b55-abe0-e9419b1e81ea.png)
 
 b) **Item-Item Collaborative Filtering**: Rating that a user would give to a particular movie is predicted by looking at the ratings given by the user to movies similar to the movie in question. To measure similiarity between two movies, we concatenate the web scraped description, movie title and genre to create the **document embeddings** using the **pretrained RoBERTa model**. We’ve utilised the **SentenceTransformer library** for the same. These models are quite suitable for tasks since they’ve been trained on the **Siamese neural network** for predicting semantic textual similarity between two sentences. We use cosine similarity between these embeddings as a measure of similarity between the movies. 
-<br/>
+
 ![image](https://user-images.githubusercontent.com/45795080/177636087-88a71719-bc7b-42a1-a45d-62ed2dc96771.png)
 
 c) **Neural Collaborative Filtering**:
+
+![image](https://user-images.githubusercontent.com/45795080/177638380-667976dc-b66c-4854-ae5b-2acb0c91f7e1.png)
 
 
 2. We have implemented 1 model for **“Because you watched [Movie X recently, you may also like]”** option based on the last watched movie by a user (inspired by the similar option provided by **Netflix**).
