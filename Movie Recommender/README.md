@@ -22,7 +22,7 @@ Movies dataframe after webscraping:
 
 1. We have implemented multiple (9) models to perform a **“Recommended for You”** functionality for a user based on their previous ratings.
 
-a) **User-User Collaborative Filtering**: 
+a) **User-User Collaborative Filtering**: Ratings that a user would give to an movie is predicted by looking at the ratings given by some similar users to the same movie. 
 <br/>
 b) **Item-Item Collaborative Filtering**: 
 <br/>
