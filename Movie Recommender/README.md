@@ -22,9 +22,13 @@ Movies dataframe after webscraping:
 
 1. We have implemented multiple (9) models to perform a **“Recommended for You”** functionality for a user based on their previous ratings.
 
-a) **User-User Collaborative Filtering**: Rating that a user would give to a paticular movie is predicted by looking at the ratings given by some similar users to the same movie. ![image](https://user-images.githubusercontent.com/45795080/177635558-413113b4-f3d4-4b55-abe0-e9419b1e81ea.png)
+a) **User-User Collaborative Filtering**: Rating that a user would give to a paticular movie is predicted by looking at the ratings given by some similar users to the same movie. 
+<br/>
+![image](https://user-images.githubusercontent.com/45795080/177635558-413113b4-f3d4-4b55-abe0-e9419b1e81ea.png)
 
-b) **Item-Item Collaborative Filtering**: Rating that a user would give to a particular movie is predicted by looking at the ratings given by the user to movies similar to the movie in question. To measure similiarity between two movies, we concatenate the web scraped description, movie title and genre to create the **document embeddings** using the **pretrained RoBERTa model**. We’ve utilised the **SentenceTransformer library** for the same. These models are quite suitable for tasks since they’ve been trained on the **Siamese neural network** for predicting semantic textual similarity between two sentences. We use cosine similarity between these embeddings as a measure of similarity between the movies. ![image](https://user-images.githubusercontent.com/45795080/177636087-88a71719-bc7b-42a1-a45d-62ed2dc96771.png)
+b) **Item-Item Collaborative Filtering**: Rating that a user would give to a particular movie is predicted by looking at the ratings given by the user to movies similar to the movie in question. To measure similiarity between two movies, we concatenate the web scraped description, movie title and genre to create the **document embeddings** using the **pretrained RoBERTa model**. We’ve utilised the **SentenceTransformer library** for the same. These models are quite suitable for tasks since they’ve been trained on the **Siamese neural network** for predicting semantic textual similarity between two sentences. We use cosine similarity between these embeddings as a measure of similarity between the movies. 
+<br/>
+![image](https://user-images.githubusercontent.com/45795080/177636087-88a71719-bc7b-42a1-a45d-62ed2dc96771.png)
 
 c) **Neural Collaborative Filtering**:
 
@@ -90,11 +94,8 @@ It builds a movie recommender using item-based collaborative filtering and runs 
 Command to run the code: **python3 neural_cf.py model_num**
 
 It builds a movie recommender using neural collaborative filtering (NCF) and runs 10 fold cross validation testing on the MovieLens 1M dataset. It further generates separate qrel and result files for all the folds and thresholds (3-5). **model_num** can be set from a range of 1-7 to choose the NCF model. Model Weights are saved in a **\*.h5** file.  
-<br/>
-<br/>
-<br/>
-### Libraries Required
 
+### Libraries Required
 1)NLTK - https://www.nltk.org/ 
 
 2)spaCy - https://spacy.io/ 
