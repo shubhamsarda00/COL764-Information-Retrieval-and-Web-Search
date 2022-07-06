@@ -67,7 +67,6 @@ We find that on almost all metrics, our best results are obtained on our 6th and
 
 The notebook demonstrates the working of the webscraper and movie recommender. It can be used to scrape movie descriptions by taking movie as input from the user. It further contains the code to run any of the models mentioned above to get movie recommendations for any user in the MovieLens database.
 
-
 2. **preprocessing.py**:
 
 Command to run the code: **python3 preprocessing.py** 
@@ -91,8 +90,9 @@ It builds a movie recommender using item-based collaborative filtering and runs 
 Command to run the code: **python3 neural_cf.py model_num**
 
 It builds a movie recommender using neural collaborative filtering (NCF) and runs 10 fold cross validation testing on the MovieLens 1M dataset. It further generates separate qrel and result files for all the folds and thresholds (3-5). **model_num** can be set from a range of 1-7 to choose the NCF model. Model Weights are saved in a **\*.h5** file.  
-
-
+<br/>
+<br/>
+<br/>
 ### Libraries Required
 
 1)NLTK - https://www.nltk.org/ 
