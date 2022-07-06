@@ -30,7 +30,7 @@ b) **Item-Item Collaborative Filtering**: Rating that a user would give to a par
 
 ![image](https://user-images.githubusercontent.com/45795080/177636087-88a71719-bc7b-42a1-a45d-62ed2dc96771.png)
 
-c) **Neural Collaborative Filtering**:
+c) **Neural Collaborative Filtering**: Here, we leverage neural networks to achieve the state of the art results in recommendation. We've implemented 7 novel architectures for the same. More details on the models implemented: https://docs.google.com/document/d/1rtsJOChtFL7xlAEdbA8G4frhINIfrzROGPjzj75BvTM/edit?usp=sharing
 
 ![image](https://user-images.githubusercontent.com/45795080/177638380-667976dc-b66c-4854-ae5b-2acb0c91f7e1.png)
 
