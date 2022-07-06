@@ -8,11 +8,11 @@ The dataset contains 1,000,000 ratings given by different users along with the t
 
 Movies dataframe before webscraping:
 
-![image](https://user-images.githubusercontent.com/45795080/177042966-d3ca32f0-b093-4f28-b4b6-1dd16305a9f7.png)
+![image](https://user-images.githubusercontent.com/45795080/177640552-a6e3a359-3b84-4225-8ab2-387b704cbe7c.png)
 
 Movies dataframe after webscraping:
 
-![image](https://user-images.githubusercontent.com/45795080/177042953-162b7276-04bc-4e53-b3d2-ca57961e735f.png)
+![image](https://user-images.githubusercontent.com/45795080/177640496-57384fff-5d11-4ee5-a226-6ef0f7859c89.png)
 
 <br/>
 ### Our Recommendation System
